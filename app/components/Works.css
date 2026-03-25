@@ -1,0 +1,19 @@
+.featuredWorks {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionHeader {
+  margin-bottom: 20px;
+}
+
+.worksList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
