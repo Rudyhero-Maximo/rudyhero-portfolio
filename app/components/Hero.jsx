@@ -1,48 +1,48 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.container}>
+    <section className="py-24">
+      <div className="max-w-4xl mx-auto px-5 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
-        <div className={styles.left}>
-          <h1>
-            Olá, eu sou Rudyhero,<br />
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-5xl font-bold mb-5 leading-tight">
+            Ola, eu sou Rudyhero,<br />
             Desenvolvedor Front-end
           </h1>
 
-          <p>
+          <p className="text-gray-500 leading-relaxed mb-8 text-[15px]">
             Desenvolvedor front-end focado em criar interfaces modernas,
-            responsivas e com boa experiência do usuário. Tenho interesse em React, Next,
-            JavaScript e boas práticas de desenvolvimento web.
+            responsivas e com boa experiencia do usuario. Tenho interesse em React, Next,
+            JavaScript e boas praticas de desenvolvimento web.
           </p>
 
-          <div className={styles.buttons}>
-            <a 
-              href="https://www.linkedin.com/in/rudyhero-maximo-210a8b104/" 
-              target="_blank" 
+          <div className="flex gap-4 justify-center md:justify-start">
+            <a
+              href="https://www.linkedin.com/in/rudyhero-maximo-210a8b104/"
+              target="_blank"
               rel="noopener noreferrer"
-              className={styles.primary}
+              className="bg-[#ff6464] hover:bg-[#e05555] text-white px-6 py-3 rounded-md text-sm transition-all duration-300 hover:-translate-y-0.5"
             >
               LinkedIn
             </a>
 
-            <a 
-              href="https://github.com/Rudyhero-Maximo" 
-              target="_blank" 
+            <a
+              href="https://github.com/Rudyhero-Maximo"
+              target="_blank"
               rel="noopener noreferrer"
-              className={styles.secondary}
+              className="bg-[#ff6464] hover:bg-[#e05555] text-white px-6 py-3 rounded-md text-sm transition-all duration-300 hover:-translate-y-0.5"
             >
               GitHub
             </a>
           </div>
         </div>
 
-        <div className={styles.right}>
+        <div className="flex justify-center items-center">
           <img
             src="https://avatars.githubusercontent.com/u/255448044?v=4"
             alt="Rudy"
+            className="w-[180px] h-[180px] md:w-[220px] md:h-[220px] rounded-full object-cover"
           />
         </div>
 

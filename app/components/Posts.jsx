@@ -1,16 +1,15 @@
-import styles from "./Posts.module.css";
 import PostCard from "./PostCard";
 
 export default function Posts() {
   return (
-    <section className={styles.posts}>
-      <div className={styles.container}>
+    <section className="py-20 bg-[#fafafa]">
+      <div className="max-w-4xl mx-auto px-5">
 
-        <div className={styles.sectionHeader}>
-          <h2>Recent posts</h2>
+        <div className="mb-10">
+          <h2 className="text-[26px] font-semibold">Recent posts</h2>
         </div>
 
-        <div className={styles.postsGrid}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <PostCard
             title="Aprendendo React na prática"
             date="12 Fev 2026"
